@@ -1,0 +1,12 @@
+.wrapper {
+  margin-top: 50px;
+  max-width: 1000px;
+  min-height: 800px;
+  margin-inline: auto;
+  background: teal;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}

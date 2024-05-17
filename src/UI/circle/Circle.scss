@@ -1,0 +1,39 @@
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #d0d0d0;
+  display: block;
+  border-radius: 50%;
+
+  text-align: center;
+}
+
+.true {
+  background-color: rgba(0, 128, 0, 0.87);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "\2714";
+    font-size: 13px;
+    color: white;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+.false {
+  background-color: red;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "×";
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -2px;
+  }
+}
